@@ -1,10 +1,10 @@
 #include<stdio.h>
-/*
- * main - main
+/**
+ * main - Entry point
  *
- * sizeof - size in bytes
+ * Sizeof - Size in bytes
  *
- * return - always 0 (sucess)
+ * Return: Always 0 (Success)
  */
 int main(void)
 {
