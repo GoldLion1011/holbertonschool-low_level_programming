@@ -1,8 +1,10 @@
 #include<stdio.h>
 /*
- * main - entry point
- * sizeof
- * return - always 0
+ * main - main
+ *
+ * sizeof - size in bytes
+ *
+ * return - always 0 (sucess)
  */
 int main(void)
 {
