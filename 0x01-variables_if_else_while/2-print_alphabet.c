@@ -1,6 +1,6 @@
 #include <stdio.h>
 /**
-  * main - Entry poiny
+  * main - Entry point
   *
   * Alphabet game
   *
@@ -9,13 +9,15 @@
 
 int main(void)
 {
-	char ch = 'a';
+	int lc;
 
-	while (ch <= 'z')
+	lc = 'a';
+
+	while (lc <= 'z')
 	{
-		printf("%c ", ch);
-		ch++;
+		putchar(lc);
+		((lc++));
 	}
-	printf("\n");
+	putchar ('\n');
 	return (0);
 }
