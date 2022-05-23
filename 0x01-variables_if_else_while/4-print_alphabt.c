@@ -4,9 +4,8 @@
   *
   * using && to exclude chars
   *
-  * Return - Always 0 (Success)
+  * Return: Always 0 (Success)
   */
-
 int main(void)
 {
 	int c;
@@ -21,6 +20,6 @@ int main(void)
 			c++;
 		}
 	}
-	putchar ('\n');
+	putchar('\n');
 	return (0);
 }
