@@ -1,6 +1,7 @@
 #include "main.h"
 /**
-  * int print_sign - prints the value of a number
+  * print_sign - Prints the value of a number
+  * @n: User inputs value for n
   * Return: -1 if neg, 1 if pos, 0 if all else
   */
 

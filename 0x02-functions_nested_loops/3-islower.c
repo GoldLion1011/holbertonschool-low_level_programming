@@ -1,6 +1,7 @@
 #include "main.h"
 /**
-  * int _islower - return 1 if lowercase, 0 if not
+  * _islower - Return 1 if lowercase, 0 if not
+  * @c: c is given by user
   * Return: 1 or 0 (Success)
   */
 

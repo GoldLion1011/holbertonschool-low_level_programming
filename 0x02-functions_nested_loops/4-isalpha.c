@@ -1,7 +1,8 @@
 #include "main.h"
 /**
-  * int_isalpha - return 1 if lowercase, 0 if not
-  * Return: 1 or 0 (Success)
+  * _isalpha - Return 1 if lowercase, 0 if not
+  * @c: User inputs value
+  *Return: 1 or 0 (Success)
   */
 
 int _isalpha(int c)
