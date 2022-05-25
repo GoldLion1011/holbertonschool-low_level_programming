@@ -14,18 +14,6 @@ int main(void)
 
 	char y = 'a';
 
-/**	
-  *     while (z <= '9');
-  *	{
-  *		putchar(z);
-  *		z++;
-  *	}
-  *	while (y <= 'f');
-  *	{
-  *		putchar(y);
-  *		y++;
-  *	}
-  */
 	for (z = '0'; z <= '9'; z++)
 		putchar(z);
 	for (y = 'a'; y <= 'f'; y++)
