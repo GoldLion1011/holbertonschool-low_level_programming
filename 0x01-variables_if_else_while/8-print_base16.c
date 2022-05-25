@@ -14,7 +14,8 @@ int main(void)
 
 	char y = 'a';
 
-/**	while (z <= '9');
+/**	
+  *     while (z <= '9');
   *	{
   *		putchar(z);
   *		z++;
@@ -28,7 +29,7 @@ int main(void)
 	for (z = '0'; z <= '9'; z++)
 		putchar(z);
 	for (y = 'a'; y <= 'f'; y++)
-		putchar(y);	
+		putchar(y);
 	putchar('\n');
 	return (0);
 }
