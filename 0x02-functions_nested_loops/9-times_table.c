@@ -1,8 +1,8 @@
 #include "main.h"
 /**
+  * times_table - Prints a mult table
   *
-  *
-  *
+  * Return: Void (Success)
   */
 
 void times_table(void)
@@ -31,4 +31,4 @@ void times_table(void)
 		}
 	_putchar('\n');
 	}
-}						
+}
