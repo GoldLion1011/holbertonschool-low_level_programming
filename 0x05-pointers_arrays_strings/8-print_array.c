@@ -4,6 +4,7 @@
 /**
   * print_array - prints the elements of an array
   * @n: elements of the array
+  * @a: i dunno
   * Return: void (Success)
   */
 
