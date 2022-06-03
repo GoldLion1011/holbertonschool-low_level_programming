@@ -2,7 +2,7 @@
 
 /**
   * puts_half - prints the back half of string
-  *
+  * @str: string to be printed
   * Return: void (success)
   */
 
