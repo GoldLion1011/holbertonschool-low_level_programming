@@ -23,6 +23,7 @@ char *_strncat(char *dest, char *src, int n)
 		if (src[d])
 		{
 			dest[c] = src[d];
+			c++;
 		}
 		else
 		{
