@@ -5,12 +5,13 @@
   * @s: pointer to n
   * @b: constant byte
   * @n: first n bytes of an array
-  * Return: char (success)
+  * Return: pointer to the memory area s
   */
 
 char *_memset(char *s, char b, unsigned int n)
 {
-	char* p = s;
+	char *p = s;
+
 	while (n--)
 	{
 		*p++ = (unsigned char)b;
