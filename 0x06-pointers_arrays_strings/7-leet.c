@@ -18,16 +18,17 @@ char *leet(char *s)
 
 	i = 0;
 	while (s[i] != '\0')
-
-	j = 0;
-	while (letters[i] != '\0')
 	{
-		if (s[i] == letters[j])
+		j = 0;
+		while (letters[j] != '\0')
 		{
-			s[i] = numbers[j];
+			if (s[i] == letters[j])
+			{
+				s[i] = numbers[j];
+			}
+			j++;
 		}
-		j++;
+		i++;
 	}
-	i++;
 	return (s);
 }
