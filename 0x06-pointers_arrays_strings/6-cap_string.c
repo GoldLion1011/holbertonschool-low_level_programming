@@ -16,7 +16,7 @@ char *cap_string(char *str)
 	}
 	i = 0;
 	while
-(str[i]) i++;
+(str[i])
 	{
 		switch (str[i])
 			case ' ':
@@ -36,6 +36,7 @@ char *cap_string(char *str)
 		{
 			str[i + 1] -= 32;
 		}
+		i++;
 	}
 	return (str);
 }
