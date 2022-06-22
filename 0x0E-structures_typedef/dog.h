@@ -2,7 +2,7 @@
 #define HEADER_FILE dog.h
 
 /**
-  * dog - struct with elements name, age, and owner
+  * struct dog - struct with elements name, age, and owner
   * @name: doggo's name
   * @age: doggo's age
   * @owner: hoomans' name
