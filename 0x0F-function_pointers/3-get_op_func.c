@@ -4,9 +4,9 @@
   * get_op_func - function pointer that selects correct operator
   *               to perform
   * @s: operator given by user
-  * 
+  *
   * Return: pointer to the function that corresponds to
-            the operator given as a parameter
+  *	    the operator given as a parameter
   */
 
 int (*get_op_func(char *s))(int, int)

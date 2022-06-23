@@ -6,7 +6,7 @@
   * main - prints result of simple math operation
   * @argc: number of arguments supplied
   * @argv: array of pointers to the arguments
-  * 
+  *
   * Return: always 0
   */
 
@@ -18,7 +18,7 @@ int main(int __attribute__((__unused__)) argc, char *argv[])
 	if (argc != 4)
 	{
 		printf("Error\n");
-		exit (98);
+		exit(98);
 	}
 
 	x = atoi(argv[1]);
@@ -28,13 +28,13 @@ int main(int __attribute__((__unused__)) argc, char *argv[])
 	if (get_op_func(op) == NULL || op[1] != '\0')
 	{
 		printf("Error\n");
-		exit (99);
+		exit(99);
 	}
 
 	if ((*op == '/' && y == 0) || (*op == '%' && y == 0))
 	{
 		printf("Error\n");
-		exit (100);
+		exit(100);
 	}
 
 	printf("%d\n", get_op_func(op)(x, y));
