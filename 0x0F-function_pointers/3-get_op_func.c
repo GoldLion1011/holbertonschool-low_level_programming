@@ -20,16 +20,10 @@ int (*get_op_func(char *s))(int, int)
 		{NULL, NULL}
 	};
 
-	int j;
+	int j = 0;
 
-	j = 0;
+	while (ops[j].op != NULL && *(ops[j].op) != *s)
+		j++;
 
-	while (ops[j].op)
-	{
-		if (strcmp(ops[j].op, s) == 0)
-			return (ops[j].f);
-			j++;
-	}
-
-	return (NULL);
+	return (ops[j].f);
 }
