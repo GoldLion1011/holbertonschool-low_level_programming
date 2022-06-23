@@ -2,11 +2,8 @@
 #include <stdlib.h>
 
 /**
-  *
-  *
-  *
-  *
-  *
+  * free_dog - frees the dog
+  * @d: dog to free
   */
 
 void free_dog(dog_t *d)
