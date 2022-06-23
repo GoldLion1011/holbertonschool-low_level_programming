@@ -5,7 +5,7 @@ int _strlen(char *s);
 char *_strcopy(char *dest, char *src);
 dog_t *new_dog(char *name, float age, char *owner);
 
-/**                                                                                                                                         
+/*
   * _strlen - gives the length of a string
   * @s: this is the given string to count
   * Return: length of string
@@ -21,7 +21,7 @@ int _strlen(char *s)
 }
 
 /**
-  * *_strcpy - copies a pointed to string
+  * _strcpy - copies a pointed to string
   * @src: pointer to array to be copied
   * @dest: destination that src is copied to
   * Return: the pointer to dest (success)
@@ -40,7 +40,7 @@ char *_strcpy(char *dest, char *src)
 }
 
 /**
-  * *new_dog - you're getting another dog!
+  * new_dog - you're getting another dog!
   * @name: names the dog
   * @age: age of new pupper
   * @owner: lucky pet parent
