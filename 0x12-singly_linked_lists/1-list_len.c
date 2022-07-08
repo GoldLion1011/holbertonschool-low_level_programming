@@ -1,10 +1,10 @@
 #include "lists.h"
 
 /**
+  * list_len - finds number of nodes in a list
+  * @h: singly linked list
   *
-  *
-  *
-  *
+  * Return: number of elements in linked list
   */
 
 size_t list_len(const list_t *h)
