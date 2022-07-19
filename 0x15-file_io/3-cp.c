@@ -7,8 +7,9 @@ void close_err(int fd);
 int main(int argc, char *argv[]);
 
 /**
-  *
-  *
+  * _checker - checks if file is NULL
+  * @file1: first file
+  * @file2: second file
   */
 
 void _checker(char *file1, char *file2)
@@ -21,42 +22,44 @@ void _checker(char *file1, char *file2)
 }
 
 /**
-  *
-  *
+  * read_err - checks for error on file read
+  * @file: file that is checked for error
   */
 
 void read_err(char *file)
 {
 	dprintf(STDERR_FILENO, "Error: Can't read from file %s\n", file);
-		exit (98);
+		exit(98);
 }
 
 /**
-  *
-  *
+  * write_err - checks for error on file write
+  * @file: file that is checked for error
   */
 
 void write_err(char *file)
 {
 	dprintf(STDERR_FILENO, "Error: Can't write to %s\n", file);
-		exit (99);
+		exit(99);
 }
 
 /**
-  *
-  *
-  *
+  * close_err - checks for error on file close
+  * @fd: file descriptor
   */
 
 void close_err(int fd)
 {
 	dprintf(STDERR_FILENO, "Error: Can't close fd %d\n", fd);
-		exit (100);
+		exit(100);
 }
 
 /**
+  * main - copies the content of a file to another file
+  * @argc: argument count
+  * @argv: argument vector
   *
-  *
+  * Return: 0 if success, -1 if fail
   */
 
 int main(int argc, char *argv[])
@@ -69,7 +72,7 @@ int main(int argc, char *argv[])
 	if (argc != 3)
 	{
 		dprintf(STDERR_FILENO, "Usage: cp file_from file_to\n");
-			exit (97);
+			exit(97);
 	}
 	_checker(argv[1], argv[2]);
 	file_i = open(argv[1], O_RDONLY);
