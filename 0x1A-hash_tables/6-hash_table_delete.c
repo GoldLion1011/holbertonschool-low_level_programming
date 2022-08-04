@@ -2,33 +2,30 @@
 
 /**
  * hash_table_delete - deletes a hash table
- * @ht: hash table to be deleted 
+ * @ht: hash table to be deleted
  */
 
 void hash_table_delete(hash_table_t *ht)
 {
 	unsigned long int j;
-	hash_node_t *temp = NULL, *next_temp = NULL;
+	hash_node_t *next;
 
-	if (ht == NULL)
+	if (ht == NULL || ht->array == NULL || ht->size == 0)
 		return;
 
-	while (j < ht->size)
+	for (j = 0; j < ht->size; j++)
 	{
-		next_temp = ht->array[j];
-		while (temp)
+		while (ht->array[j] != NULL)
 		{
-			temp = next_temp;
-			next_temp = next_temp->next;
-			if (temp->key != NULL)
-				free(temp->key);
-			if (temp->value != NULL)
-				free(temp->value);
-			free(temp);
+			next = ht->array[j]->next;
+			free(ht->array[j]->key);
+			free(ht->array[j]->value);
+			free(ht->array[j]);
+			ht->array[j] = next;
 		}
-		free(ht->array[j]);
-		j++;
 	}
 	free(ht->array);
+	ht->array = NULL;
+	ht->size = 0;
 	free(ht);
 }
