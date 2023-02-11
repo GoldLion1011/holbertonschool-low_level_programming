@@ -22,19 +22,22 @@ int binary_search(int *array, size_t size, int value)
         printf("Searching in array: ");
         for (i = 0; i < size; i++)
         {
-            if (i == size - 1)
+            if ((i + 1) == size)
                 printf("%d\n", p[i]);
             else
                 printf("%d, ", p[i]);
         }
-        if (p[size / 2] == value)
-            return (p + (size / 2) - array);
-        else if (p[size / 2] > value)
-            size /= 2;
+        i = (size - 1) / 2;
+        if (p[i] == value)
+            return ((p - array) + i);
+        else if (p[i] > value)
+        {
+            size = i;
+        }
         else
         {
-            p += size / 2 + 1;
-            size = (size - 1) / 2;
+            p += i + 1;
+            size -= i + 1;
         }
     }
     return (-1);
